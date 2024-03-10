@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="header-container">
+      <h1>Join the Dark Side!!</h1> 
+      <h2>The Empire's official recruitment survey</h2>
+    </div>
+
+    <div id="form-container">
+      <form>
+        <div>
+          <label for="name"></label>Name
+          <input name="name" placeholder="Enter your name" min="3" required>
+        </div>
+        <div>
+          <label for="email"></label>Email
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="age"></label>Age <span>(18+ years)</span>
+          <input type="number" name="age" min="18" required>
+        </div>
+        <div>
+          Choose your rank!
+          <select>
+            <option value="" disabled>Select your role</option>
+            <option value="stormtrooper">Stormtrooper</option>
+            <option value="hunter">Hunter</option>
+            <option value="captain">Captain</option>
+            <option value="commander">Commander</option>
+            <option value="admiral">Admiral</option>
+            <option value="director">Director</option>
+            <option value="sith">Sith?</option>
+          </select>
+        </div>
+
+        <div class="recommend-friend">
+          Would you invite a friend to join the Empire?
+          <div>
+            <input type="radio" name="recommend" value="yes" checked><label for="recommend">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="recommend" value="definitely"><label for="recommend">Definitely</label>
+          </div>
+          <div>
+            <input type="radio" name="recommend" value="absolutely"><label for="recommend">Absolutely</label>
+          </div>
+        </div>
+
+        <input id="submit-button" type="submit" value="Join">
+      </form>
+    </div>
+
+  </body>
+</html>
