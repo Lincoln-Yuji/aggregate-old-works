@@ -15,18 +15,21 @@
 
     <div id="form-container">
       <form>
-        <div>
+        <div class="info-field">
           <label for="name"></label>Name
           <input name="name" placeholder="Enter your name" min="3" required>
         </div>
-        <div>
+        <div class="info-field">
           <label for="email"></label>Email
           <input type="email" name="email" placeholder="Enter your email" required>
         </div>
-        <div>
+        <div class="info-field">
           <label for="age"></label>Age <span>(18+ years)</span>
           <input type="number" name="age" min="18" required>
         </div>
+
+        <hr>
+
         <div>
           Choose your rank!
           <select>
@@ -40,6 +43,8 @@
             <option value="sith">Sith?</option>
           </select>
         </div>
+
+        <hr>
 
         <div class="recommend-friend">
           Would you invite a friend to join the Empire?
